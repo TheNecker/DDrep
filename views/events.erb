@@ -1,23 +1,60 @@
-<html lang ="en">   
+<html lang ="en">
 <link rel = "stylesheet" href ="css/style.css">
-<form method = 'post' action = '/events'>
-    <header>
-        <meta charset="utf-8">
-        <title>Dragons Den: Games & Comics!</title>
-        <hr><h3><i id="title">Dragons Den</i></h3></hr>
-		<hr><h4><i id="subtitle">Comics & Games</i></h3></hr><br>
+<form method = 'post' action = '/home'>
+	<header>
+		<meta charset="utf-8">
+		<title>Dragons Den: Games & Comics!</title>
+		<hr><h3><i id="title">Dragons Den</i></h3></hr><br>
+		<hr><h4><i id="subtitle">Comics & Games</i></h3></hr>	
 		<ul>
 		<div id="list">
-			<li><a href="/index">Home</a></li>
+			<li><a href="/home">Home</a></li>
 			<li><a href="/events">Events</a></li>
-			<li><a href="/contacUs">Contact Us</a></li>
+			<li><a href="/contactUs">Contact Us</a></li>
 			<li><a href="/aboutUs">About Us</a></li>
 		</div>
 		</ul>
-</header>
+	</header>
+	</form>
 
-<body>
-<img id="logo" src="/img/logo.jpg" height="150px" width="150px">
-</body>
-</form>
-    
+	<body>
+		<img id="logo" src="/img/logo.jpg" height="150px" width="150px">
+  <div id="table" class="table-editable">
+    <span class="table-add glyphicon glyphicon-plus"></span>
+    <table class="table">
+      <tr>
+        <th>Name</th>
+        <th>Value</th>
+        <th></th>
+        <th></th>
+      </tr>
+      <tr>
+        <td contenteditable="true">Stir Fry</td>
+        <td contenteditable="true">stir-fry</td>
+        <td>
+          <span class="table-remove glyphicon glyphicon-remove"></span>
+        </td>
+        <td>
+          <span class="table-up glyphicon glyphicon-arrow-up"></span>
+          <span class="table-down glyphicon glyphicon-arrow-down"></span>
+        </td>
+      </tr>
+      <!-- This is our clonable table line -->
+      <tr class="hide">
+        <td contenteditable="true">Untitled</td>
+        <td contenteditable="true">undefined</td>
+        <td>
+          <span class="table-remove glyphicon glyphicon-remove"></span>
+        </td>
+        <td>
+          <span class="table-up glyphicon glyphicon-arrow-up"></span>
+          <span class="table-down glyphicon glyphicon-arrow-down"></span>
+        </td>
+      </tr>
+    </table>
+  </div>
+  
+  <button id="export-btn" class="btn btn-primary">Export Data</button>
+  <p id="export"></p>
+</div>
+	</body>
