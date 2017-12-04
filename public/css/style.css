@@ -1,5 +1,67 @@
 body {
     background-image: url(../img/background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100%;
 }
 
-div.jazzin {}
+header {
+    position: relative;
+}
+
+ul {
+    list-style-type: none;
+    overflow: hidden;
+    background-color: lightblue;
+    padding-left: 160px;
+    padding-top: 40px;
+    margin-top: 95px;
+    margin-right: -8px;
+}
+
+li {
+    display: inline-block;
+}
+
+li a {
+    display: block;
+    color: black;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    border-left: 1px solid black;
+}
+
+
+/* li a:hover {
+	background-color: red;
+} */
+
+div.jazzin {
+    position: relative;
+}
+
+#logo {
+    position: relative;
+    border: 4px solid black;
+    bottom: 0px;
+    border-top-width: 4px;
+    top: -171px;
+    left: -9px;
+}
+
+#DD {
+    background-color: skyblue;
+    margin-left: 149px;
+    position: relative;
+    top: 100px;
+    margin-top: -120px;
+    padding-top: 14px;
+    bottom: 0px;
+    padding-bottom: 65px;
+    margin-right: -8px;
+}
+
+div#linksnhead {
+    margin-top: 20px;
+}
